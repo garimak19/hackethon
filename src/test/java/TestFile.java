@@ -185,8 +185,9 @@ static String sPath="/Users/mohitkumar/eclipse-workspace/Maven_Hackethon/Book1.x
 		driver.findElement(By.xpath("//a[contains(text(),'About')]")).click();
 		WebElement lname=driver.findElement(By.xpath("//input[@id='lastName']"));
 		waitForVisibilty(lname);
-		
-		lname.sendKeys("umar");
+		lname.clear();
+		Thread.sleep(2000);
+		lname.sendKeys("Kumar");
 	Thread.sleep(3000);
 	driver.findElement(By.xpath("//input[@class='zen-btn zen-primaryBtn zen-pas']")).click();
 	Thread.sleep(3000);
